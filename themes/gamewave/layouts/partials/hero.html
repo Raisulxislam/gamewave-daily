@@ -9,7 +9,7 @@
       <div class="hero-caption">
         {{ with $p.Params.tags }}<span class="card-kicker {{ partial "tagclass" (index . 0) }}">{{ index . 0 }}</span>{{ end }}
         <h2 class="hero-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
-        <p class="hero-meta">{{ $p.Date.Format "January 2, 2006" }} {{ with $p.Params.source_site }}&middot; {{ . }}{{ end }}</p>
+        <p class="hero-meta">{{ $p.Date.Format "January 2, 2006" }}</p>
       </div>
     </div>
   {{ end }}
