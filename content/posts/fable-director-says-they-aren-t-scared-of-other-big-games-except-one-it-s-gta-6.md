@@ -1,14 +1,23 @@
 ---
-title: "Fable's Director Has One Fear, and It's Rocksteinsteinly Obvious: GTA 6"
+title: "Fable's Director Names the One Game He's 'Happy to Avoid Entirely' — Naturally, It's GTA 6"
+title_bn: "ফেবলের ডিরেক্টর যাকে একেবারে এড়াতে চান, সাফ জানালেন: GTA 6"
 date: "2026-08-28T14:54:03+00:00"
 tags: ["News"]
 draft: false
 feature: "/images/posts/2026/08/28/images/fable-director-says-they-aren-t-scared-of-other-big-games-except-one-it-s-gta-6.png"
+description: "Fable's director names the one game he is happy to avoid entirely: this November's GTA 6 juggernaut, and the delay into 2027 confirms it."
 content_bn: |
-  ফেবলের পরিচালক এক্সবক্সের আসন্ন আরপিজির সামনে প্রতিযোগিতামূলক ল্যান্ডস্কেপ সম্পর্কে সতেজভাবে সরল হয়েছেন। যখন জিজ্ঞাসা করা হয়েছে কোন রিলিজগুলি তিনি লক্ষ্য রাখছেন, উত্তরটি কোনো আন্ডারডগ ইন্ডি বা খাঁটি ধরনের প্রতিদ্বন্দ্বী ছিল না — এটি ছিল জিটিএ ৬, রকস্টারের একটি ভারী খেলা যা সমগ্র শিল্পের রিলিজ ক্যালেন্ডারের উপর ছায়া ফেলছে।
 
-  এটি ধরনের সৎ স্বীকারোক্তি যা সাধারণ স্টুডিও PR-এর কথাবার্তা ভেঙে দেয়। বেশিরভাগ ডেভেলপার হেসিয়ে বেঁচে যেতেন বা বেশ কয়েকটি শিরোনাম নাম ধরে ডাকতেন; ফেবলের প্রধান সরাসরি স্পষ্ট উত্তরের দিকে গিয়েছেন। যখন আপনার খেলাটি একটি নতুন গ্র্যান্ড থেফট অটোর সাথে একই সময়ে লঞ্চ হয়, সেটি সেই বাস্তবতা-যাচাই যা কেউই উপেক্ষা করতে পারে না।
 rewritten: true
+gw_rw: 2
 ---
 
-[Read the full story at PC Gamer](https://www.pcgamer.com/games/rpg/fable-director-says-they-arent-scared-of-other-big-games-except-one-its-gta-6-in-case-you-were-living-under-a-rock/)
+Few studios say it aloud, but Fable's director just did: there is exactly one game he's happy to avoid at launch, and it's GTA 6. In a gamescom 2026 interview with IGN, Ralph Fulton effectively confirmed what Xbox spent months refusing to confirm — Fable was pulled from October and will now arrive in 2027.
+
+## The Delay Everyone Could See Was About GTA 6
+
+"I was really looking forward to shipping this game this year," Fulton said, admitting he dreaded one more January 1 speech to the team about "this is the year we ship Fable." The reasoning behind the move, he added, "is pretty apparent to everybody." And he frames it as prudence, not panic: "We don't run scared of other big games. We're a big game ourselves. There's just one that I'm happy to avoid entirely."
+
+## A Crowded Autumn, One Very Big Shadow
+
+GTA 6 isn't the only heavyweight in that window — Onimusha: Way of the Sword, a pair of Star Wars games, Marvel's Wolverine, Control Resonant, Gears of War: E-Day and Phantom Blade Zero all ship before the year is out. But the one game with the gravitational pull to reorganise an entire season's calendar is precisely the one Fulton wants no part of. Whether that's wise scheduling or the closest a director ever comes to admitting a fear, it's refreshing to hear somebody name the elephant in the room.

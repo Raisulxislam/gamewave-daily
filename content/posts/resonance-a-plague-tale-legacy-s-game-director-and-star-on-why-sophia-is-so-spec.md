@@ -1,14 +1,31 @@
 ---
-title: "Asobo's Boss and Sophia's Voice Actor Explain Why This Prequel Was a Breath of Fresh Air"
+title: "Asobo's Boss and Sophia's Voice Actor Explain Why This Prequel Felt Like a Breath of Fresh Air"
+title_bn: "প্রিক্যুয়েল কেন এত আলাদা, বললেন আসোবোর পরিচালক ও সোফিয়ার কণ্ঠশিল্পী"
 date: "2026-08-28T11:53:03+00:00"
 tags: ["News"]
 draft: false
 feature: "/images/posts/2026/08/28/images/resonance-a-plague-tale-legacy-s-game-director-and-star-on-why-sophia-is-so-spec.png"
+description: "Resonance: A Plague Tale Legacy's director and Sophia's voice actor explain why the new prequel on PS5, Xbox Series X/S, and PC feels so fresh."
 content_bn: |
-  Resonance: A Plague Tale Legacy এইমাত্র PS5, Xbox Series X/S এবং PC-তে এসেছে — এবং gamescom 2026-এ আমরা Asobo-র সহ-প্রতিষ্ঠাতা ডেভিড ডেদেইন ও সোফিয়ার কণ্ঠের আনা ডেমেত্রিওর সাথে বসে কথা বলেছি এই প্রিক্যুয়েলটি ফ্র্যাঞ্চাইজির জন্য কী মানে রাখে।
+  সবশেষে এসে পৌঁছাল Resonance: A Plague Tale Legacy — PS5, Xbox Series X/S আর PC-তে — আর সেটা একটা এমন ভার মাথায় নিয়ে এল, যা গেমিংয়ের সবচেয়ে প্রিয় আধুনিক ফ্র্যাঞ্চাইজিগুলোর একটির কাঁধে থাকে।
 
-  ডেদেইন এই প্রকল্পকে দলটির জন্য "সতেজ বাতাসের মতো একটি সুযোগ" হিসেবে বর্ণনা করেছেন — মূল খেলাগুলোকে এতটা শক্তিশালী করে তোলা আবেগময় কেন্দ্রটি রক্ষা করতে গিয়ে একটি নতুন সময়রেখায় পা রাখা। ডেমেত্রিও বলেছেন, সোফিয়া শুধু একটি প্রিক্যুয়েলের জন্য উন্নীত করা পার্শ্বচরিত্র নন — তিনি সেই ধরনের প্রধান চরিত্র যার জন্য সিরিজে সবসময় জায়গা ছিল।
+  **নতুন ফুসফুস নিয়ে এক আদি-কাহিনি**
+
+  গেমসকমে আমরা কথা বলেছি আসোবোর সহ-প্রতিষ্ঠাতা ও গেম ডিরেক্টর David Dedeine-এর সঙ্গে, আর সোফিয়ার কণ্ঠের পেছনের মানুষ Anna Demetriou-এর সঙ্গেও। দুজনেই বললেন, কীভাবে এই প্রিক্যুয়েল তাদের মূল কাহিনির ভারী আবহের চাপ থেকে মুক্তি দিয়েছে, ফলে নতুন এক নায়িকা নিজের শর্তে নিশ্বাস নেওয়ার জায়গা পেয়েছে।
+
+  **কেন সোফিয়া আলাদা দাঁড়ায়**
+
+  Dedeine ও Demetriou-র মতে, পরিচিত প্লেগ-বিধ্বস্ত সময়রেখার আগে ফিরে যাওয়া দলটিকে এমন জায়গা দিয়েছে, যেখানে সোফিয়াকে কেবল চালকের খুঁটি হিসেবে নয় — নিজস্ব জরুরিভাব নিয়ে এক নায়িকা হিসেবে গড়ে তোলা যায়, আর এ ধরা একটা সুরের বদল, যা সিরিজকে বেড়ে ওঠার জায়গা দেয়।
 rewritten: true
+gw_rw: 2
 ---
 
-Resonance: A Plague Tale Legacy has just been released on PS5, Xbox Series X/S, and PC, and we had the chance at gamescom to speak to David Dedeine, co-founder of Asobo and game director, and Anna Demetriou, Sophia's voice actor, about this big moment for the franchise.
+Resonance: A Plague Tale Legacy is finally here on PS5, Xbox Series X/S, and PC — and it arrives carrying the weight of one of gaming's most beloved modern franchises.
+
+**An origin story with fresh lungs**
+
+At gamescom, we spoke to David Dedeine, co-founder of Asobo and game director, alongside Anna Demetriou, the voice behind Sophia. Both explained how the prequel freed them from the weight of the original saga's overhang, letting a new lead breathe on her own terms.
+
+**Why Sophia stands apart**
+
+Dedeine and Demetriou argue that stepping back before the familiar plague-ravaged timeline gave the team room to make Sophia feel like more than a plot device — a protagonist with her own urgency, and a tonal shift that gives the series room to grow.

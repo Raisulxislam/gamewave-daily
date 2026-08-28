@@ -1,16 +1,31 @@
 ---
 title: "Satire Dates Fast — So GTA 6 Needs Jokes That Can Survive the Wait"
+title_bn: "বিদ্রূপের দিন ফুরোয় দ্রুত — তাই GTA 6-র দরকার টেকসই রসিকতা"
 date: "2026-08-28T15:27:18+00:00"
 tags: ["News"]
 draft: false
 feature: "/images/posts/2026/08/28/images/rockstar-has-to-be-careful-about-what-gta-6-picks-to-satirize-because-very-speci.jpg"
+description: "GTA 6 satire risks dating itself fast, so Rockstar has to pick jokes that still land when the game finally ships."
 content_bn: |
-  Grand Theft Auto সবসময়ই বর্তমানকে মুখে সরাসরি ঘুষি মেরে নিজের পরিচয় গড়েছে। সমস্যা হলো — PC Gamer যেমন বলছে, Rockstar গেম পাঠিয়ে দেওয়ার অনেক আগেই বর্তমানটা পেছনে ফেলে এগিয়ে যাওয়ার অভ্যাস রাখে।
+  রকস্টারকে সাবধানে বেছে নিতে হবে তার বিদ্রূপের তীর কোন দিকে ছুটবে — কারণ খুব নির্দিষ্ট রাজনৈতিক ইস্যু আর মিম ভয়ানক দ্রুত পুরনো হয়ে যায়।
 
-  যুক্তিটা হলো: Rockstar-কে "সতর্ক" হতে হবে কোন লক্ষ্যগুলো বাছাই করা হয়। কোনো একটি নির্দিষ্ট রাজনৈতিক ইস্যুতে খুব গভীরে ঢুকে পড়লে, বা কোনো একটা মেমের পিছনে খুব সোজাসুজি ছুটলে, সেই রসিকতা "দ্রুত পুরনো হয়ে যাওয়ার" ঝুঁকিতে পড়ে — গেমটা আসার সময় গত সপ্তাহের খবরের মতোই বাসি মনে হবে।
+  **একটা রসিকতার আয়ু**
 
-  সরাসরি কথা হলো, প্রায় এক দশক ধরে তৈরি হওয়া গেম এমন ঘটনাকে লক্ষ্য করার সামর্থ্য রাখে না যা কয়েক দিনেই বদলে যায়। স্টুডিওর কলম আর প্লেয়ারের কনসোলের মাঝের সেই দীর্ঘ ফাঁকটা পেরোতে পারে — এমন গল্পকেই বাঁচিয়ে রাখতে হবে।
+  Grand Theft Auto সবসময় মুহূর্তের সংস্কৃতির উপরই নিজের ধার ঝালাই করেছে। কিন্তু লেখা আর প্রকাশের মাঝে বিরাট ফাঁক, আর আজ যে লক্ষ্য জ্বলজ্বল করছে, লঞ্চের সময় সেটাই ইতিহাসের পাতা হয়ে থাকতে পারে। এটা সত্যিকারের এক সৃজনশীল দোটানা।
+
+  **ভালো করে বেছে নাও, নিরাপদ নয়**
+
+  এর মানে এই নয় যে গেমটা দাঁতহীন হয়ে যাবে — শুধু এই যে GTA 6, এক সপ্তাহের পুরনো মিমের বদলে টেকসই লক্ষ্যে হানা দেওয়া হাস্যরসকেই বেশি পুরস্কৃত করবে। সবচেয়ে ধারালো বিদ্রূপ অপেক্ষাটুকুও টিকে যায়; বাকিটা হয়ে যায় কেবল একটা কালছাপ।
 rewritten: true
+gw_rw: 2
 ---
 
-[Read the full story at PC Gamer](https://www.pcgamer.com/games/grand-theft-auto/rockstar-has-to-be-careful-about-what-gta-6-picks-to-satirize-because-very-specific-political-issues-or-memes-will-date-fast/)
+Rockstar has to be careful about what it points its satirical finger at — because very specific political issues and memes go stale shockingly quickly.
+
+**The shelf life of a joke**
+
+Grand Theft Auto has always sharpened itself on the culture of the moment. But the gap between writing and shipping is huge, and any target that's blazing hot today can feel like ancient history by launch. It's a real creative bind.
+
+**Pick smarter, not safer**
+
+That doesn't mean the game should go toothless — just that GTA 6 will reward the kind of humor that aims at durable targets rather than week-old memes. The sharpest satire survives the wait; the rest becomes a timestamp.

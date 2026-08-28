@@ -1,16 +1,31 @@
 ---
 title: "Discs Get a Tombstone and Consoles Get More Expensive — Saber's Boss Weighs In"
+title_bn: "ডিস্কের কবর, দামি কনসোল — সবের ভেতর আসবে কী, জানালেন সাবেরের প্রধান"
 date: "2026-08-28T14:32:10+00:00"
 tags: ["Esports"]
 draft: false
 feature: "/images/posts/2026/08/28/images/saber-boss-reacts-to-the-death-of-physical-games-and-rising-console-prices.jpg"
+description: "Saber's boss reacts to Sony ending physical PlayStation discs in 2028 and the trend of steadily more expensive consoles in 2026."
 content_bn: |
-  ২০২৬ এমন গল্প উপহার দিয়েই চলেছে, যা কয়েক বছর আগে কেউ কল্পনাও করত না। সনি ঘোষণা করেছে, ২০২৮-এ ফিজিক্যাল প্লেস্টেশন গেম ডিস্কের সমর্থন তুলে নেওয়া হবে — মানে যে ফরম্যাটটা বছরের পর বছর ধরে বিদায়ের পথে হাঁপিয়ে চলছিল, তার মাথায় এক নির্দিষ্ট শেষ তারিখ এসে পড়েছে। আর দোকানের অন্য তাকে কনসোলের দামের ট্যাগ দিন দিন আরও নাগালের বাইরে চলে যাচ্ছে।
+  ২০২৬ শিল্পটাকে একসঙ্গে দুই চোট দিয়েছে: Sony-র ঘোষণা যে ২০২৮ সালে ফিজিক্যাল PlayStation গেম ডিস্কে সমর্থন শেষ হয়ে যাবে, আর কনসোলের দামের ক্রমাগত ঊর্ধ্বমুখী রেখা।
 
-  সাবের ইন্টারঅ্যাক্টিভের বস এখন এই দুই ধারার প্রতিক্রিয়াই দিয়েছেন — ফিজিক্যাল মিডিয়া যেখানে নিখোঁজ হচ্ছে আর হার্ডওয়্যার যেখানে দামে চড়ছে, এমন এক মুহূর্তের হিসাব কষেছেন।
+  **শুধু ডিজিটাল এক ভবিষ্যৎ**
 
-  সরাসরি বক্তব্য: ডিস্কের মাথায় যদি সরকারিভাবে ঘড়ি বসে থাকে, আর প্রতিটি প্রজন্মে বাক্সটা যদি আরও দামি হতে থাকে, তাহলে কনসোল আস্তে আস্তে বিলাসী পণ্য হয়ে উঠছে — আর এই শব্দটুকু মেনে নেওয়াই এখন শিল্পের বুদ্ধি।
+  ২০২৮ সালে PlayStation থেকে ফিজিক্যাল ডিস্ক বাদ দেওয়া হচ্ছে — এটাই ডিস্ক যুগ শেষ হয়ে যাওয়ার সবচেয়ে সাম্প্রতিক ও জোরালো বার্তা। Saber Interactive-এর মতো ডেভেলপারদের কাছে প্রশ্নটা 'হবে কি না' নয়, বরং এই বদল কত দ্রুত আঘাত করবে।
+
+  **খেলার দাম**
+
+  এদিকে কনসোল দিনে দিনে দামি হচ্ছে, আর সাবেরের প্রধান স্পষ্ট ভাষায় বলেন চাপটা কতটা বাড়ছে — স্টুডিও আর খেলোয়াড়, দুপক্ষেরই। তাঁর মতে, এই শিল্প এখন নিঃশব্দে নতুন করে ঠিক করছে, গেম খেলা আসলে কত দামের।
 rewritten: true
+gw_rw: 2
 ---
 
-2026 has been full of big storylines in gaming, including Sony's announcement that it will end support for physical PlayStation game discs in 2028 and the trend of consoles getting increasingly expensive.
+2026 has already handed the industry two bruising storylines: Sony's announcement that it will end support for physical PlayStation game discs in 2028, and the steady march of console prices upward.
+
+**A digital-only future**
+
+The move to drop physical discs from PlayStation in 2028 is the latest, loudest signal that the disc era is winding down. For developers like Saber Interactive, it's less a question of whether, and more a question of how fast the transition will hurt.
+
+**The price of playing**
+
+Meanwhile, consoles keep getting pricier, and Saber's boss is candid about the squeeze that puts on everyone — studios and players alike. The result, he argues, is an industry quietly renegotiating what playing games is worth.
