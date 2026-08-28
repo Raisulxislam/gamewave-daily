@@ -1,13 +1,14 @@
 ---
-title: "Pulsar's new mouse is sliced in half to make it genuinely 'crazy-light'"
+title: "Pulsar Literally Sliced Its Latest Mouse in Half to Shatter the Weight Record"
 date: "2026-08-28T13:56:54+00:00"
 tags: ["News"]
 draft: false
 feature: "/images/posts/2026/08/28/images/pulsar-s-new-mouse-is-sliced-in-half-to-make-it-genuinely-crazy-light.jpg"
+content_bn: |
+  বেশিরভাগ গেমিং মাউস উপাদান পরিবর্তন করে বা শেল খোলা করে কম ওজনের পেছনে ছুটে চলে। Pulsar অন্য পথে গেছে: তারা সোজাসুজি জিনিসটিকে অর্ধেক করে দিয়েছে। ফলাফল হলো এমন একটি মাউস যতটা নির্মমভাবে কেটে ফেলা হয়েছে ততটা এটি অবাস্তবতার দিকে ঝুঁকে পড়েছে, এবং কোম্পানিটি এটিকে "পাগলের মতো হালকা" বলে ডাকছে কোনো বিদ্রুপ ছাড়াই।
+
+  একটি পেরিফেরাল কোম্পানি কিছু গ্রাম বাঁচানোর সেরা উপায় হিসেবে হার্ডওয়্যারের অর্ধেক সরিয়ে দেওয়ার সিদ্ধান্ত নেওয়ার মধ্যে একটি চমৎকার অপ্রতিসংগত মাত্রা রয়েছে। এটি আসলে আপনার ফ্লিক শটকে উন্নত করে নাকি শুধু স্ট্রিমারদের সামনে দেখানোর জন্য — সেটি সম্পূর্ণ অন্য প্রশ্ন। কিন্তু অতিরিক্ততায় যাওয়ার এই প্রতিশ্রুতির জন্য সম্মান করতে হবে।
+rewritten: true
 ---
 
 'I swear it came like that,' I say as I chew through half a mouse.
-
-[Read the full story at PC Gamer](https://www.pcgamer.com/hardware/gaming-mice/pulsars-new-mouse-is-sliced-in-half-to-make-it-genuinely-crazy-light/)
-
-What do you think? Jump into the thread below and share your take.

@@ -1,11 +1,14 @@
 ---
-title: "All the key details about 'anime GTA' game Ananta"
+title: "Ananta: The Anime GTA That's Finally Getting Attention"
 date: "2026-08-28T14:26:26+00:00"
 tags: ["News"]
 draft: false
 feature: "/images/posts/2026/08/28/images/all-the-key-details-about-anime-gta-game-ananta.jpg"
+content_bn: |
+  যদি আপনি অ্যানিমে নান্দনিকতায় মোড়া একটি জিটিএ-স্টাইল ওপেন ওয়ার্ল্ডের জন্য আকুল, তাহলে অনন্ত সেই খুব নির্দিষ্ট খাপটি পূরণ করতে প্রস্তুত মনে হচ্ছে। খেলাটি অ্যানিমে-প্রভাবিত একটি অপরাধ স্যান্ডবক্স ফর্মুলার ধরনে মনোযোগ আকর্ষণ করছে, স্টাইলাইজড ভিজ্যুয়ালকে রকস্টারের ফ্র্যাঞ্চাইজির সাথে খেলোয়াড়দের সংযুক্ত ধরনের স্বাধীনতার সাথে মিশিয়ে।
+
+  পিসি গেমার শিরোনামটি সম্পর্কে এখন পর্যন্ত যা জানা যায় তার একটি বিস্তৃত ব্রেকডাউন প্রদান করেছে। যারা পারম্পরিক ওপেন-ওয়ার্ল্ড অপরাধ খেলার তুলনায় কম খারাপ, আরও স্টাইলাইজড বিকল্প চেয়েছেন, তাদের জন্য অনন্ত ঘনিষ্ঠভাবে পর্যবেক্ষণীয় হয়ে উঠছে।
+rewritten: true
 ---
 
 [Read the full story at PC Gamer](https://www.pcgamer.com/games/rpg/ananta-guide/)
-
-What do you think? Jump into the thread below and share your take.
