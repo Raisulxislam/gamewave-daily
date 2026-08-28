@@ -30,14 +30,28 @@ EXPORT_PATH = os.path.join(HOME, ".gwi", "rewrite_out.jsonl")
 BATCH = 6
 TIMEOUT = 900
 
-PROMPT_TMPL = """You are the senior editor of GameWave, an independent gaming news site.
+PROMPT_TMPL = """You are the senior editor of GameWave, an independent gaming news magazine.
 
-Rewrite each story below from scratch in GameWave's house style: punchy magazine prose, 2-4 short paragraphs, one or two bold takes, written in fresh original sentences. Use ONLY the factual information given — never copy or closely paraphrase the original headline or body, never invent facts. Keep claims attributable to what the story actually says.
+Reset. For every story you write two deliverables: an ORIGINAL English rewrite and a natural Bangla version, each with its own headline and meta description. Both must read as freshly reported magazine journalism — never a word-for-word copy of the source line, never a machine-style back-translation, and never anything you would be embarrassed to print.
 
-Also produce title_bn and body_bn: a natural, fluent Bangla (Bengali) translation of YOUR English rewrite (not a word-for-word mechanical one) plus its Bangla headline.
+HOW TO WRITE THE ENGLISH STORY
+- 2-4 short paragraphs with 1-2 H2 subheads (##) for structure (SEO-friendly scanning).
+- Open with a crisp lede; add one or two bold, opinionated-but-fair takes.
+- Weave in at most one well-established, verifiable FACT beyond the source snippet (a confirmed release window, an announced platform list, a widely reported figure) only if you are confident it is true. Never invent quotes, never fabricate numbers, never stretch. If no such fact is safe, keep strictly to the snippet.
+- Pick a natural focus keyword for the story and use it in the EN title, an H2, and the first paragraph.
 
-Return ONLY a JSON array, nothing else (no markdown fences). One object per story in the same order:
-[{{"slug": "<slug>", "title": "<rewritten English headline>", "title_bn": "<bangla headline>", "body": "<english markdown body>", "body_bn": "<bangla markdown body>"}}]
+BANGLA VERSION (title_bn, body_bn)
+- Write fluent, contemporary magazine Bengali in the চলিত রীতি — a genuine REWRITE for Bangla readers, not a mechanical translation of the English body. Sentences must feel born in Bengali.
+- Keep product/game/company names and model identifiers in Latin script (PlayStation, Steam, RTX 5080, etc.) where natural; names of people may stay in Latin. Everything else — verbs, pronouns, common nouns, connectors — in proper Bangla. NEVER romanize or mix half-English sentences.
+- Prefer Bangla numerals (১০, ৫%, ২০২৬) in prose.
+- Mirror the English H2 structure loosely. Proofread: no accidental English words, no literal-translation clunkers, no passive-voice rot.
+- title_bn: punchy Bangla headline (60 chars max).
+
+META DESCRIPTION
+- Provide "desc": a 140-160 character English meta description containing the focus keyword.
+
+Return ONLY a JSON array, nothing else (no markdown fences). One object per story, same order:
+[{{"slug": "<slug>", "title": "<rewritten English headline>", "title_bn": "<bangla headline>", "desc": "<english meta description>", "body": "<english markdown body>", "body_bn": "<bangla markdown body>"}}]
 
 Stories:
 {stories}
@@ -64,8 +78,9 @@ def load_pending():
             break
         path = os.path.join(POSTS, f)
         txt = open(path, encoding="utf-8").read()
-        if "rewritten: true" in txt and "content_bn:" in txt:
-            continue  # already rewritten
+        if ("gw_rw: 2" in txt and "content_bn:" in txt
+                and "title_bn:" in txt):
+            continue  # already rewritten under prompt v2 with BN title
         fm, body = split_fm(txt)
         if not fm:
             continue
@@ -163,23 +178,31 @@ def esc(s):
     return s.replace("\\", "\\\\").replace('"', '\\"')
 
 
-def write_back(fm, item, body_en):
-    # Keep existing metadata, swap title, add bilingual bodies + marker,
-    # strip any legacy source_* keys.
+def write_back(fm, item):
+    body_en = (item.get("body") or "").strip()
+    if not body_en:
+        body_en = (fm["body_draft"] or "").strip()
     keep = {k: fm.get(k) for k in ("date", "tags", "draft", "feature")}
     lines = ["---"]
     lines.append(f"title: \"{esc(item.get('title', key(fm, 'title')))}\"")
+    tbn = (item.get("title_bn") or "").strip()
+    if tbn:
+        lines.append(f"title_bn: \"{esc(tbn)}\"")
     for k in ("date", "tags", "draft", "feature"):
         if keep.get(k) is not None:
             lines.append(f"{k}: {keep[k]}")
+    desc = (item.get("desc") or "").strip()
+    if desc:
+        lines.append(f"description: \"{esc(desc)}\"")
     bn = (item.get("body_bn") or "").strip()
     lines.append("content_bn: |")
     for para in bn.split("\n"):
         lines.append("  " + para if para.strip() else "")
     lines.append("rewritten: true")
+    lines.append("gw_rw: 2")
     lines.append("---")
     lines.append("")
-    lines.append((body_en or item.get("body", "")).strip())
+    lines.append(body_en)
     lines.append("")
     with open(fm["path"], "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines))
@@ -213,9 +236,9 @@ def main():
                 restored += 1
                 continue
             try:
-                write_back(fm, item, fm["body_draft"])
+                write_back(fm, item)
                 done += 1
-                log(f"rewrite: {fm['slug']} -> done (+ বাংলা)")
+                log(f"rewrite: {fm['slug']} -> done (+ বাংলা, SEO desc)")
             except Exception as e:
                 log(f"rewrite: write error {fm['slug']}: {e}")
                 restored += 1

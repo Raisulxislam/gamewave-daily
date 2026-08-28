@@ -6,7 +6,7 @@
       {{ with .Params.tags }}
         <span class="card-kicker {{ partial "tagclass" (index . 0) }}">{{ index . 0 }}</span>
       {{ end }}
-      <h1 class="x-title">{{ .Title }}</h1>
+      <h1 class="x-title" data-en-title="{{ .Title }}" data-bn-title="{{ with .Params.title_bn }}{{ . }}{{ end }}">{{ .Title }}</h1>
       <div class="x-meta">
         <span class="x-date">{{ .Date.Format "January 2, 2006" }}</span>
       </div>

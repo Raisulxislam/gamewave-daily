@@ -51,6 +51,12 @@ FEEDS = [
      ["videogameschronicle.com", "wp.com"]),
     ("The Verge Games", "https://www.theverge.com/rss/games/index.xml",
      ["theverge.com", "vox-cdn.com"]),
+    ("Rock Paper Shotgun", "https://www.rockpapershotgun.com/feeds/latest",
+     ["rockpapershotgun.com"]),
+    ("Destructoid", "https://www.destructoid.com/feed/",
+     ["destructoid.com", "wp.com"]),
+    ("Windows Central", "https://www.windowscentral.com/rss.xml",
+     ["futurecdn.net", "windowscentral.com"]),
 ]
 
 BANNED = [
@@ -85,8 +91,9 @@ ALLOWED_IMAGE_MAGIC = {
 WEBP_MAGIC = b"RIFF"
 
 MAX_BYTES = 2_500_000
-PER_FEED_CAP = 2
-MAX_TOTAL = 6
+PER_FEED_CAP = 4
+MAX_TOTAL = 12
+DAILY_BUDGET = int(os.environ.get("GW_DAILY", "48"))
 SLEEP = 0.33
 
 
@@ -285,8 +292,14 @@ def run():
     counter = 0
     created = []
 
+    today = now_utc.date().isoformat()
+    daily = state.get("_daily", {})
+    if daily.get("day") != today:
+        daily = {"day": today, "count": 0}
+    used_today = daily.get("count", 0)
+
     for name, feed_url, hosts in FEEDS:
-        if counter >= MAX_TOTAL:
+        if counter >= MAX_TOTAL or used_today >= DAILY_BUDGET:
             break
         try:
             xml_text = fetch_feed(feed_url)
@@ -302,7 +315,9 @@ def run():
         seen = set(state.get(name, []))
         accepted = 0
         for it in items:
-            if counter >= MAX_TOTAL or accepted >= PER_FEED_CAP:
+            if counter >= MAX_TOTAL or used_today >= DAILY_BUDGET:
+                break
+            if accepted >= PER_FEED_CAP:
                 break
             guid = it["guid"] or it["link"]
             if not guid or guid in seen:
@@ -333,6 +348,7 @@ def run():
                 state[name] = list(seen)
                 accepted += 1
                 counter += 1
+                used_today += 1
                 created.append(post)
                 log(f"  + {post}")
             else:
@@ -341,6 +357,7 @@ def run():
                 state[name] = list(seen)
             time.sleep(SLEEP)
 
+    state["_daily"] = daily
     save_state(state)
     log(f"done: {len(created)} posts created")
     return len(created)

@@ -31,7 +31,7 @@
 
   function restart() {
     clearInterval(timer);
-    timer = setInterval(function () { goto(current + 1); }, 6000);
+    timer = setInterval(function () { goto(current + 1); }, 7000);
   }
 
   prev.addEventListener('click', function () { goto(current - 1); restart(); });
@@ -52,16 +52,50 @@
   var btns = btnWrap.querySelectorAll('.lang-btn');
   var enBody = document.querySelector('[data-lang-body="en"]');
   var bnBody = document.querySelector('[data-lang-body="bn"]');
+  var h1 = document.querySelector('.x-title');
   if (!enBody || !bnBody) return;
+  var lastFocused = null;
+
+  function apply(lang) {
+    var showBn = lang === 'bn';
+    enBody.hidden = showBn;
+    bnBody.hidden = !showBn;
+    if (h1 && showBn && h1.dataset.bnTitle) {
+      h1.textContent = h1.dataset.bnTitle;
+      h1.classList.add('bn');
+      document.documentElement.lang = 'bn';
+    }
+    if (h1 && !showBn) {
+      h1.textContent = h1.dataset.enTitle;
+      h1.classList.remove('bn');
+      document.documentElement.lang = 'en';
+    }
+  }
 
   btns.forEach(function (b) {
     b.addEventListener('click', function () {
-      var lang = b.getAttribute('data-lang-body');
       btns.forEach(function (x) { x.classList.toggle('active', x === b); });
-      var showBn = lang === 'bn';
-      enBody.hidden = showBn;
-      bnBody.hidden = !showBn;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      apply(b.getAttribute('data-lang-body'));
     });
+  });
+
+  btnWrap.addEventListener('keydown', function (e) {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    var idx = Array.prototype.indexOf.call(btns, document.activeElement);
+    if (idx < 0) return;
+    e.preventDefault();
+    var next = (e.key === 'ArrowRight') ? (idx + 1) % btns.length : (idx + btns.length - 1) % btns.length;
+    btns[next].click();
+    btns[next].focus();
+  });
+})();
+
+(function () {
+  var links = document.querySelectorAll('.nav a');
+  var path = location.pathname;
+  links.forEach(function (a) {
+    var href = a.getAttribute('href') || '/';
+    if (href !== '/' && path.indexOf(href) === 0) a.classList.add('active');
+    if (href === '/' && path === '/') a.classList.add('active');
   });
 })();
