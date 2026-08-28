@@ -16,6 +16,10 @@ if [ "$SCAN_RC" -ne 0 ]; then
   exit 1
 fi
 
+echo "=== rewrite $(date -u +%Y-%m-%dT%H:%M:%SZ) ===" | tee -a "$LOG"
+python3 scripts/rewrite.py 2>&1 | tee -a "$LOG"
+echo "=== rewrite done ===" | tee -a "$LOG"
+
 echo "=== build $(date -u +%Y-%m-%dT%H:%M:%SZ) ===" | tee -a "$LOG"
 hugo --gc --minify >> "$LOG" 2>&1
 if [ $? -ne 0 ]; then

@@ -44,3 +44,24 @@
 
   restart();
 })();
+
+(function () {
+  var btnWrap = document.querySelector('.x-lang');
+  if (!btnWrap) return;
+
+  var btns = btnWrap.querySelectorAll('.lang-btn');
+  var enBody = document.querySelector('[data-lang-body="en"]');
+  var bnBody = document.querySelector('[data-lang-body="bn"]');
+  if (!enBody || !bnBody) return;
+
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var lang = b.getAttribute('data-lang-body');
+      btns.forEach(function (x) { x.classList.toggle('active', x === b); });
+      var showBn = lang === 'bn';
+      enBody.hidden = showBn;
+      bnBody.hidden = !showBn;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+})();

@@ -4,8 +4,6 @@ date: "2026-08-28T14:52:27+00:00"
 tags: ["News"]
 draft: false
 feature: "/images/posts/2026/08/28/images/buying-a-refurbished-ps5-is-your-best-bet-for-a-more-affordable-way-to-play-gta.png"
-source_url: "https://www.ign.com/articles/ps5-refurbished-affordable-gta-6-console"
-source_site: "IGN"
 ---
 
 Looking for a more affordable way to play GTA 6 this November? Here is why buying a certified refurbished PS5 is your best bet to save money on hardware right now.

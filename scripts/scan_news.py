@@ -326,7 +326,7 @@ def run():
                 state[name] = list(seen)
                 continue
             date = parse_date(it["date"], now_utc)
-            post = write_post(it, ext, blob, date, name)
+            post = write_post(it, ext, blob, date)
             if post:
                 seen.add(guid)
                 seen = trim_seen(seen)
@@ -357,7 +357,7 @@ def ensure_img_dir():
     os.makedirs(os.path.join(IMG, sub, "images"), exist_ok=True)
 
 
-def write_post(it, ext, blob, date, source_site):
+def write_post(it, ext, blob, date):
     slug = slugify(it["title"])
     path = os.path.join(POSTS, f"{slug}.md")
     n = 2
@@ -377,8 +377,7 @@ def write_post(it, ext, blob, date, source_site):
     body = ""
     if lead:
         body += lead + "\n\n"
-    body += f"[Read the full story at {source_site}]({it['link']})\n\n"
-    body += "What do you think? Jump into the thread below and share your take."
+    body += "Jump into the thread below and share your take."
 
     fm = []
     fm.append("---")
@@ -387,8 +386,6 @@ def write_post(it, ext, blob, date, source_site):
     fm.append(f"tags: [{', '.join(f'\"{t}\"' for t in tags)}]")
     fm.append("draft: false")
     fm.append(f"feature: \"/images/posts/{sub}/images/{fname}\"")
-    fm.append(f"source_url: \"{esc(it['link'])}\"")
-    fm.append(f"source_site: \"{source_site}\"")
     fm.append("---")
     fm.append("")
     fm.append(body)

@@ -9,7 +9,6 @@
       <h1 class="x-title">{{ .Title }}</h1>
       <div class="x-meta">
         <span class="x-date">{{ .Date.Format "January 2, 2006" }}</span>
-        {{ with .Params.source_site }}<span class="x-dot">&middot;</span><span>{{ . }}</span>{{ end }}
       </div>
     </header>
 
@@ -19,18 +18,28 @@
       </figure>
     {{ end }}
 
-    <div class="x-body">
+    {{ if .Params.content_bn }}
+      <div class="x-lang" role="group" aria-label="Language">
+        <button class="lang-btn active" type="button" data-lang-body="en">English</button>
+        <button class="lang-btn" type="button" data-lang-body="bn">বাংলা</button>
+      </div>
+    {{ end }}
+
+    <div class="x-body" data-lang-body="en">
       {{ .Content }}
     </div>
+
+    {{ with .Params.content_bn }}
+      <div class="x-body x-body-bn" data-lang-body="bn" lang="bn" hidden>
+        {{ $.RenderString . }}
+      </div>
+    {{ end }}
 
     <footer class="x-foot">
       {{ with .Params.tags }}
         <div class="post-tags">
           {{ range . }}<a class="tag" href="/tags/{{ . | lower }}/">#{{ . }}</a>{{ end }}
         </div>
-      {{ end }}
-      {{ with .Params.source_url }}
-        <p class="x-source">Original: <a href="{{ . }}" rel="nofollow noopener" target="_blank">{{ $.Params.source_site | default "source" }} &nearr;</a></p>
       {{ end }}
     </footer>
 

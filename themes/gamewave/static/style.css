@@ -302,6 +302,30 @@ a { color: inherit; }
 .x-meta { display: flex; gap: 0.5rem; color: var(--muted); font-size: 0.88rem; }
 .x-dot { color: #c8ced6; }
 
+.x-lang {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.2rem;
+  margin: 0.5rem 0 1.25rem;
+  background: #eef0f3;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.lang-btn {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.35rem 1rem;
+  cursor: pointer;
+}
+.lang-btn.active { color: var(--bg); background: var(--accent); }
+
+.x-body-bn { font-family: 'Noto Sans Bengali', var(--sans); line-height: 1.9; }
+
 .x-media { margin: 1.5rem 0 1.75rem; }
 .x-media img { width: 100%; border-radius: 10px; border: 1px solid var(--line); }
 

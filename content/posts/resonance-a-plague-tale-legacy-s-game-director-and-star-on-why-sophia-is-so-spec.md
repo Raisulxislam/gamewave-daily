@@ -4,8 +4,6 @@ date: "2026-08-28T11:53:03+00:00"
 tags: ["News"]
 draft: false
 feature: "/images/posts/2026/08/28/images/resonance-a-plague-tale-legacy-s-game-director-and-star-on-why-sophia-is-so-spec.png"
-source_url: "https://www.ign.com/articles/resonance-a-plague-tale-legacys-game-director-and-star-on-why-sophia-is-so-special-and-why-this-prequel-let-the-team-get-some-fresh-air-gamescom-2026"
-source_site: "IGN"
 ---
 
 Resonance: A Plague Tale Legacy has just been released on PS5, Xbox Series X/S, and PC, and we had the chance at gamescom to speak to David Dedeine, co-founder of Asobo and game director, and Anna Demetriou, Sophia's voice actor, about this big moment for the franchise.
