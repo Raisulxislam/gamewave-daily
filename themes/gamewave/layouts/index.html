@@ -1,0 +1,43 @@
+{{ define "title" }}{{ .Site.Title }} — Surf the game wave{{ end }}
+{{ define "otitle" }}{{ .Site.Title }}{{ end }}
+{{ define "main" }}
+  {{ $all := where .Site.RegularPages "Type" "posts" }}
+  {{ $sorted := $all.ByDate.Reverse }}
+  {{ $heroCount := .Site.Params.hero_count | default 5 }}
+  {{ $hero := first $heroCount $sorted }}
+
+  {{ if gt (len $hero) 0 }}
+    {{ partial "hero.html" $hero }}
+  {{ end }}
+
+  <section class="wrap section">
+    <div class="section-head">
+      <span class="section-label news">Latest</span>
+      <h2 class="section-title">Newest on GameWave</h2>
+    </div>
+    <div class="grid">
+      {{ range first 8 $sorted }}
+        {{ partial "card.html" . }}
+      {{ end }}
+    </div>
+  </section>
+
+  {{ range .Site.Params.sections.order }}
+    {{ $tag := . }}
+    {{ $posts := where $all "Params.tags" "intersect" (slice $tag) }}
+    {{ $posts = sort $posts "Date" "desc" }}
+    {{ if gt (len $posts) 0 }}
+    <section class="wrap section">
+      <div class="section-head">
+        <span class="section-label {{ $tag | lower }}">{{ $tag }}</span>
+        <a class="section-more" href="/tags/{{ $tag | lower }}/">See all &rsaquo;</a>
+      </div>
+      <div class="grid grid-4">
+        {{ range first 4 $posts }}
+          {{ partial "card.html" . }}
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  {{ end }}
+{{ end }}

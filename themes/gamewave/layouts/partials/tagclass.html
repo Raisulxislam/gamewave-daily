@@ -1,0 +1,9 @@
+{{ $tag := . }}
+{{- if eq $tag "Reviews" -}}k-reviews
+{{- else if eq $tag "Leaks" -}}k-leaks
+{{- else if eq $tag "Indie" -}}k-indie
+{{- else if eq $tag "Esports" -}}k-esports
+{{- else if eq $tag "Tech" -}}k-tech
+{{- else if eq $tag "Updates" -}}k-updates
+{{- else -}}k-news
+{{- end -}}

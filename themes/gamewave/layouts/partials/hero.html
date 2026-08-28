@@ -1,0 +1,19 @@
+{{ $posts := . }}
+<div class="hero" id="hero" data-count="{{ len $posts }}">
+  {{ range $i, $p := $posts }}
+    <div class="hero-slide{{ if eq $i 0 }} active{{ end }}">
+      <a class="hero-media" href="{{ $p.RelPermalink }}">
+        {{ with $p.Params.feature }}<img src="{{ . }}" alt="{{ $p.Title }}">{{ end }}
+        <div class="hero-shade"></div>
+      </a>
+      <div class="hero-caption">
+        {{ with $p.Params.tags }}<span class="card-kicker {{ partial "tagclass" (index . 0) }}">{{ index . 0 }}</span>{{ end }}
+        <h2 class="hero-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
+        <p class="hero-meta">{{ $p.Date.Format "January 2, 2006" }} {{ with $p.Params.source_site }}&middot; {{ . }}{{ end }}</p>
+      </div>
+    </div>
+  {{ end }}
+  <button class="hero-arrow hero-prev" aria-label="Previous slide">&#10094;</button>
+  <button class="hero-arrow hero-next" aria-label="Next slide">&#10095;</button>
+  <div class="hero-dots"></div>
+</div>

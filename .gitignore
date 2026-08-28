@@ -1,0 +1,4 @@
+public/
+resources/
+.vercel/
+.hugo_build.lock

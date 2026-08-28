@@ -1,0 +1,14 @@
+<article class="card">
+  <a class="card-media" href="{{ .RelPermalink }}">
+    {{ with .Params.feature }}
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+    {{ end }}
+    {{ with .Params.tags }}
+      <span class="card-kicker {{ partial "tagclass" (index . 0) }}">{{ index . 0 }}</span>
+    {{ end }}
+  </a>
+  <div class="card-body">
+    <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p class="card-meta">{{ .Date.Format "Jan 2, 2006" }} {{ with .Params.source_site }}&middot; {{ . }}{{ end }}</p>
+  </div>
+</article>

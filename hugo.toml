@@ -1,0 +1,46 @@
+baseURL = "https://gamewave-daily.vercel.app/"
+languageCode = "en"
+title = "GameWave"
+theme = "gamewave"
+paginate = 18
+enableRobotsTXT = true
+
+[params]
+  tagline = "Gaming news, leaks, reviews & updates — surf the game wave."
+  description = "GameWave auto-scans the web for the freshest gaming news, leaks, reviews and updates. Surf the game wave."
+  comment_repo = "Raisulxislam/gamewave-daily"
+  hero_count = 5
+  default_image = "/images/default-banner.svg"
+
+[params.sections]
+  order = ["News", "Reviews", "Leaks", "Indie", "Esports", "Tech", "Updates"]
+
+[menu]
+  [[menu.main]]
+    name = "News"
+    url = "/tags/news/"
+    weight = 1
+  [[menu.main]]
+    name = "Reviews"
+    url = "/tags/reviews/"
+    weight = 2
+  [[menu.main]]
+    name = "Leaks"
+    url = "/tags/leaks/"
+    weight = 3
+  [[menu.main]]
+    name = "Indie"
+    url = "/tags/indie/"
+    weight = 4
+  [[menu.main]]
+    name = "Esports"
+    url = "/tags/esports/"
+    weight = 5
+  [[menu.main]]
+    name = "Tech"
+    url = "/tags/tech/"
+    weight = 6
+  [[menu.main]]
+    name = "Updates"
+    url = "/tags/updates/"
+    weight = 7

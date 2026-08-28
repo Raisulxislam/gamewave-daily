@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ block "title" . }}{{ .Site.Title }} — {{ .Site.Params.tagline }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="icon" href="/images/gw-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="{{ .Site.Title }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:title" content="{{ block "otitle" . }}{{ .Site.Title }}{{ end }}">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0e1116">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="/"><img src="/images/gw-mark.svg" alt="" class="brand-mark">Game<span>Wave</span></a>
+      <nav class="nav">
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </nav>
+      <a class="rss-link" href="/index.xml" title="RSS">RSS</a>
+    </div>
+  </header>
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-brand"><img src="/images/gw-mark.svg" alt="">Game<span>Wave</span></div>
+      <p>Surf the game wave. Auto-scanned twice a day — news, leaks, reviews &amp; updates.</p>
+      <p class="footer-meta">&copy; {{ now.Format "2006" }} {{ .Site.Title }} &middot; Built with Hugo &middot; <a href="/index.xml">RSS</a></p>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

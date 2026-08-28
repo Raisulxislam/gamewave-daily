@@ -1,0 +1,7 @@
+{
+  "name": "gamewave-daily",
+  "framework": "hugo",
+  "buildCommand": "hugo --minify --gc --themesDir themes",
+  "outputDirectory": "public",
+  "cleanUrls": true
+}

@@ -1,0 +1,39 @@
+{{ define "title" }}{{ .Title }} — {{ .Site.Title }}{{ end }}
+{{ define "otitle" }}{{ .Title }} — {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+  <article class="x-article">
+    <header class="x-head">
+      {{ with .Params.tags }}
+        <span class="card-kicker {{ partial "tagclass" (index . 0) }}">{{ index . 0 }}</span>
+      {{ end }}
+      <h1 class="x-title">{{ .Title }}</h1>
+      <div class="x-meta">
+        <span class="x-date">{{ .Date.Format "January 2, 2006" }}</span>
+        {{ with .Params.source_site }}<span class="x-dot">&middot;</span><span>{{ . }}</span>{{ end }}
+      </div>
+    </header>
+
+    {{ with .Params.feature }}
+      <figure class="x-media">
+        <img src="{{ . }}" alt="{{ $.Title }}">
+      </figure>
+    {{ end }}
+
+    <div class="x-body">
+      {{ .Content }}
+    </div>
+
+    <footer class="x-foot">
+      {{ with .Params.tags }}
+        <div class="post-tags">
+          {{ range . }}<a class="tag" href="/tags/{{ . | lower }}/">#{{ . }}</a>{{ end }}
+        </div>
+      {{ end }}
+      {{ with .Params.source_url }}
+        <p class="x-source">Original: <a href="{{ . }}" rel="nofollow noopener" target="_blank">{{ $.Params.source_site | default "source" }} &nearr;</a></p>
+      {{ end }}
+    </footer>
+
+    {{ partial "comment.html" . }}
+  </article>
+{{ end }}
